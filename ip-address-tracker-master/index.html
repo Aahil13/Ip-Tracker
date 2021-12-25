@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin="" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>IP Address Tracker</h1>
+    <div class="input-group">
+      <input type="text" placeholder="Search for any IP address or domain">
+      <span onclick="handleIpChange()" class="input-group-text bg-dark border-0">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+            font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g fill="#ffffff">
+              <path
+                d="M55.40169,21.44401c-2.18809,0.03343 -4.13752,1.38993 -4.92926,3.43003c-0.79175,2.0401 -0.26776,4.35652 1.32493,5.85724l56.94141,55.26872l-56.94141,55.26872c-1.40952,1.33073 -1.99341,3.31727 -1.52812,5.19904c0.46529,1.88178 1.90767,3.3673 3.77493,3.88782c1.86725,0.52052 3.87013,-0.0046 5.24181,-1.3743l60.91667,-59.125c1.04232,-1.01225 1.63048,-2.40333 1.63048,-3.85628c0,-1.45295 -0.58816,-2.84403 -1.63048,-3.85628l-60.91667,-59.125c-1.02836,-1.02884 -2.42979,-1.59698 -3.88428,-1.57471z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+  </header>
+  <main>
+    <div class="navigation-group row" id="navigation">
+      <div class="Address col">
+        <p>IP Address</p>
+        <h6 id="address"></h6>
+      </div>
+      <div class="Location col">
+        <p>Location</p>
+        <h6 id="location"></h6>
+      </div>
+      <div class="Timezone col">
+        <p>Timezone</p>
+        <h6>UTC<span id="Timezone"></span></h6>
+      </div>
+      <div class="ISP col">
+        <p>ISP</p>
+        <h6 id="isp"></h6>
+      </div>
+    </div>
+    <div id="map"></div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://aahil13.github.io/personal-site/">Onyeanuna prince Eze</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="index.js"></script>
+</body>
+</html>
