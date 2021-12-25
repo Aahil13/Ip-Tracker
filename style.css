@@ -21,7 +21,7 @@ p{
 }
 
 header{
-    height: 40vh;
+    height: 400px;
     background-image: url("images/pattern-bg.png");
     color: #fff;
     padding: 1rem 0;
@@ -104,9 +104,6 @@ span:hover{
 }
 
 @media(max-width:799px){
-    header{
-        height: 60vh;
-    }
    .navigation-group{
         width: 60%; 
         display: block;
