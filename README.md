@@ -1,10 +1,20 @@
 # IP address tracker
 
-## Overview
-
 The IP Address Tracker app  gets a users IP Address location, using the [IP Geolocation API by IPify](https://geo.ipify.org/). To generate the map, we use [LeafletJS](https://leafletjs.com/).
 
-### Features
+## Table of contents
+
+- [Overview](#overview)
+  - [Features](#the-features)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+
+## overview
+
+### The Features
 
 Your users should be able to:
 
