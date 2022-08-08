@@ -37,6 +37,11 @@ Your users should be able to:
 - css
 - JavaScript
 
+## Author
+
+- Frontend Mentor - [@Aahil13](https://www.frontendmentor.io/profile/Aahil13)
+- Twitter - [@OnyeanunaE](https://twitter.com/OnyeanunaE)
+
 
 
 
